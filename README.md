@@ -4,6 +4,7 @@
 
 ## Usage
 
+
 This GitHub Action creates a new issue based on an issue template file. Here's an example workflow that creates a new issue any time you push a commit:
 
 ```yaml
