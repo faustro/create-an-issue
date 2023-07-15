@@ -141,7 +141,6 @@ export async function createAnIssue(tools: Toolkit) {
       assignees: assignees
         ? listToArray(assignees)
         : listToArray(attributes.assignees),
-      labels: listToArray(attributes.labels),
       milestone:
         Number(tools.inputs.milestone || attributes.milestone) || undefined,
     });
