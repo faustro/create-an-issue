@@ -81,6 +81,7 @@ export async function createAnIssue(tools: Toolkit) {
   const templated = {
     body: env.renderString(body, templateVariables),
     title: env.renderString(attributes.title, templateVariables),
+    labels: listToArray(attributes.labels).map(label => env.renderString(label, templateVariables)),
   };
   tools.log.debug("Templates compiled", templated);
 
